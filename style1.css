@@ -21,6 +21,10 @@ height: 100%;
 li
 {
  list-style: none;
+ padding:1.2rem 0 ;
+}
+ul{
+  padding:2.2rem 0;
 }
 .contact-info
 { 
@@ -148,7 +152,7 @@ a{
    font-family: 'Laila';
    font-style: normal;
    font-weight: 400;
-   line-height: 5.8125rem;
+   line-height: 2.8125rem;
 
 }
 .displayname

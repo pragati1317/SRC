@@ -3,7 +3,10 @@ html {
   height: 100%;
   overflow-x: hidden;
 }
-
+.FontFamily
+{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .setPadding
 {
 
@@ -42,7 +45,7 @@ html {
   width: 98%;
   padding: 3rem;
   overflow-x: none;
-  height: 100%;
+  height: 46.175rem;
   margin: auto;
   background-color: #FFFFFF;
 }
@@ -52,7 +55,7 @@ html {
   display: flex;
   width: 76%;
   height: 70%;
-  margin: 4rem auto;
+  margin:  auto;
   margin-top:7rem;
  box-sizing: border-box;
  /* justify-content:center; */
@@ -129,45 +132,46 @@ footer {
   height: 30vh;
   display: grid;
   position: relative;
-  background-color: black;
-  color: white;
-  grid-template-columns:1fr 1fr 1fr 1fr ;
-  grid-area: "Company Projects UseFulLink  Contact"
-    "Company Projects UseFulLink  Contact"
-    "Company Projects UseFulLink  Contact"
-    "Company Projects UseFulLink  Contact"
-    "Company Projects UseFulLink  Contact";
+  background-color: rgb(1, 4, 15);
+  color:#D9D9D9;
+ display:flex;
+ flex-direction:column;
+ flex-wrap:wrap;
+ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.company {
-  grid: "Company";
+.Footer-Column{
+  
   display:block;
+  width:22%;
+  font-size:1.2rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin:auto;
+  text-align: left;
 }
-
-.projects {
-  grid: "Projects";
-  display:block;
+.Footer-heading
+{
+ text-transform:uppercase;
+ font-size:1.4rem;
+ font-weight:700;
+ /* word-spacing: 0.2rem; */
 }
-
-.UseFulLink {
-  grid: "UseFulLink";
-  display:block;
+.text-reset
+{
+ font-size:1.25rem;
+ padding:0.2rem;
+ margin:0;
+ line-height: 0;
 }
-
-.contact {
-  grid: "Contact";
-  display:block;
-}
-
 /* media queries */
 /* 10 px is set for html */
 
 /* Desktop */
-@media screen and (min-width:1024px) and (maxx-width:14)
+@media screen and (min-width:1024px) and (max-width:1280px)
 {
   html 
   {
-    font-size: 85%;
+    font-size: 75%;
   }
   .page{
     margin:auto;
@@ -188,7 +192,7 @@ footer {
 {
   html 
   {
-    font-size:75%;
+    font-size:70%;
   }
   .Team-Content
   {
@@ -199,13 +203,10 @@ footer {
   {
     margin:1.2rem auto;
   }
-  .page{
-    height:70vh;
- }
 
 }
 /* Phone  */
-@media screen and (max-width:786px) 
+@media screen and (max-width:786px) and (min-width:281px)
 {
   html {
    font-size:62.5%;
@@ -233,5 +234,47 @@ footer {
   .Member-Container
   {
     margin:1.2rem auto;
+  }
+  .Footer-Column{
+    display:block;
+    width:50%;
+  }
+}
+@media screen and (max-width:280px)
+{
+ html {
+ font-size:55.5%;
+ }
+ .Form
+  {
+    display:block;
+  }
+  .contact-info
+  {
+    /* display:block; */
+    width:100%;
+  }
+
+  .contact-form
+  {
+    /* display:block; */
+    width:80%;
+  }
+  .Team-Content
+  {
+    margin:auto;
+    margin-top:5rem;
+  }
+  .Member-Container
+  {
+    margin:1.2rem auto;
+  }
+ footer 
+ {
+  display:block;
+ }
+  .Footer-Column{
+    display:block;
+    width:50%;
   }
 }
