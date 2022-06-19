@@ -1,262 +1,237 @@
-body{
+html {
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
 }
-*
+
+.setPadding
 {
+
+ line-height:0;
+}
+.Font-size
+{
+  font-size: 1.5rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#D9D9D9;
+}
+* {
   font-family: 'Jockey One', sans-serif;
-  margin:0;
- left:0;
- right:0;
-
-
-}
-.Border
-{
-   position:relative;
-  width:98%;
-  height:112%;
-  overflow-x:none;
-    left:0;
-     padding:1.9rem;
-    background-color: #589F9F;
-    margin:0;
+  margin: 0;
+  left: 0;
+  
+  right: 0;
 
 }
-.page
-{
-  width:92%;
- padding:3rem;
- overflow-x:none;
-  height:100%;
 
-  margin:auto;
-  background-color:#FFFFFF;
-}
-.Team-Content
-{
-  padding:3rem;
-  display:flex;
- width:76%;
-  height:70%;
-  margin:5rem ;
+.Border {
+  box-sizing:border-box;
+  position: relative;
+  width: 100%;
+  height: 70%;
+  overflow-x: none;
+  left: 0;
+  padding: 1.9rem;
+  background-color: #589F9F;
+  margin: 0;
 
 }
-.Team-heading
-{
-  top:100px;
-   font-size:3rem;
-   position: absolute;
-width: 346px;
-height: 346px;
-font-family: 'Jockey One';
-font-style: normal;
-font-weight: 300;
-text-align: center;
-color: #589F9F;
-margin:auto;
+
+.page {
+  box-sizing:border-box;
+  width: 98%;
+  padding: 3rem;
+  overflow-x: none;
+  height: 100%;
+  margin: auto;
+  background-color: #FFFFFF;
 }
 
-.Member-Container
-{
-  width:18.75rem;
-  height:25rem;
-  padding:1rem;
-  background-color:white;
-  box-shadow:0.1rem 0.1rem 0.3rem #D9D9D9 inset;
-  margin:1.2rem ;
+.Team-Content {
+  padding: 3rem auto;
+  display: flex;
+  width: 76%;
+  height: 70%;
+  margin: 4rem auto;
+  margin-top:7rem;
+ box-sizing: border-box;
+ /* justify-content:center; */
 }
-.Member-Container img{
-  width:18.75rem;
-  height:12.25rem;
-  background:black;
-  box-shadow:2px 2px #D9D9D9 inset;
+
+.Team-heading {
+  top: 6.25rem;
+  font-size: 3rem;
+  position: absolute;
+  width: 21.625rem;
+  height: 11.625rem;
+  font-family: 'Jockey One';
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  color: #589F9F;
+  margin: auto;
 }
-.details
-{
-  padding:1rem;
+
+.Member-Container {
+  width: 18.75rem;
+  height: 27rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.3rem #D9D9D9 inset;
+  margin: 1.2rem;
 }
-.Name
-{
+
+.Member-Container img {
+  width: 18.75rem;
+  height: 12.25rem;
+  background: black;
+  box-shadow: .1rem .1rem #D9D9D9 inset;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.Name {
   background-color: #D9D9D9;
   font-family: 'Jost';
- font-size:1.4rem;
-text-align:center;
-color: #6B7577;
-font-weight:bold;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #6B7577;
+  font-weight: bold;
+  margin-top: 0.5rem;
 
 }
-.Description
-{
 
-  font-size:18px;
-  line-height:2rem;
-  font-weight:300px;
-  color:#cac4c4;
+.Description {
+
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #cac4c4;
 
 }
-.Description p{
-  font-family:'Jost';
+
+.Description p {
+  font-family: 'Jost';
   color: #828a8b;
-  padding:1rem;
+  padding: 1rem;
 }
+
+
+/* footer  */
+
+footer {
+ 
+  width: 100%;
+  box-sizing:border-box;
+  padding: 1.9rem;
+  height: 30vh;
+  display: grid;
+  position: relative;
+  background-color: black;
+  color: white;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  grid-area: "Company Projects UseFulLink  Contact"
+    "Company Projects UseFulLink  Contact"
+    "Company Projects UseFulLink  Contact"
+    "Company Projects UseFulLink  Contact"
+    "Company Projects UseFulLink  Contact";
+}
+
+.company {
+  grid: "Company";
+  display:block;
+}
+
+.projects {
+  grid: "Projects";
+  display:block;
+}
+
+.UseFulLink {
+  grid: "UseFulLink";
+  display:block;
+}
+
+.contact {
+  grid: "Contact";
+  display:block;
+}
+
 /* media queries */
 /* 10 px is set for html */
-@media screen and (max-width:1400px){
-  html{ 
-    
-    font-size:75%;
+
+/* Desktop */
+@media screen and (min-width:1024px) and (maxx-width:14)
+{
+  html 
+  {
+    font-size: 85%;
   }
-}
-@media screen and (max-width:1186px) and (min-width:1090px)
-{
-   .Team-Content{
-     margin:4rem 2rem;
-     padding:1.2rem;
-   }
-}
-@media screen and (max-width:900px)
-{
-  html{
-    font-size:62.5%;
+  .page{
+    margin:auto;
   }
   .Team-Content
   {
-    display:block;
+    margin:auto;
+    margin-top:5rem;
   }
   .Member-Container
   {
-    display:flex;
-    width:80%;
-   margin:0.8rem;
-   height:25%;
+    margin:1.5rem auto;
   }
-  .Member-Container img
+}
+/* tablet */
+
+@media screen and (min-width:787px)and (max-width:1023px)
+{
+  html 
   {
-    height:24rem;
+    font-size:75%;
+  }
+  .Team-Content
+  {
+    margin:2.5rem auto;
+    margin-top:5rem;
+  }
+  .Member-Container
+  {
+    margin:1.2rem auto;
+  }
+  .page{
+    height:70vh;
+ }
+
+}
+/* Phone  */
+@media screen and (max-width:786px) 
+{
+  html {
+   font-size:62.5%;
+  }
+  .Form
+  {
+    display:block;
+  }
+  .contact-info
+  {
+    /* display:block; */
+    width:100%;
+  }
+
+  .contact-form
+  {
+    /* display:block; */
+    width:80%;
+  }
+  .Team-Content
+  {
+    margin:auto;
+    margin-top:5rem;
+  }
+  .Member-Container
+  {
+    margin:1.2rem auto;
   }
 }
-
-.Client-image
-{
-  width:9rem;
-  height:8rem;
-}
-.Comment-page
-{
-  top:120vh;
-  height:90%;
-  
-}
-.CommentBackground{
-  width:96%;
-  height:90vh;
-   background-image:url(./images/layer6.png) ;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   
-}
-.indicator
-{
-  position:absolute;
-  left:50%;
-  transform :translateX(-30%);
-  bottom:-3.1rem;
-}
-
-.btn{
-  display:inline-block;
-  height:12px;
-  width:12px;
-  margin:4px;
-  border-radius:12px;
-  background:#b0aeae;
-  cursor:pointer;
-}
-.active
-{
-  background:rgb(71, 231, 71);
-}
-.Comments
-{
-  display:flex;
-  width:50%;
-  height:90%;
-  margin:2rem auto;
-  background-color:white;
-  position:relative;
-}
-footer{
-  background-color:#1a1b1b;
-  color:#fff;
-  width:98%;
-  display:flex;
-  height:60%;
-}
-.company
-{
-  height:50%; 
-}
-.Page3-heading{
- padding:2.5rem;
-}
-.Page3-heading h2{
-  padding-top:4rem;
-    letter-spacing: 0.2rem;
-   font-size: 2.3rem;
-   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-   text-align: center;
-}
-.Page3-heading p{
-   color:#737171;
-   font-family:'Overlock';
-   font-size:large;
-   text-align: center;
-   padding:0.8rem;
-    width:26rem;
-    margin:auto;
-}
-.Client-view span{
-  font-size:68px;
-  color:lightgreen;
-  font-family:'Times New Roman', Times, serif;
-  font-style: italic;
-}
-.Client-view p
-{
-  color:#b0aeae;
-  font-family: 'Laila';
-  font-style:oblique;
-  line-height: 1.8rem;
-  text-align: center;
-  width:26rem;
-  margin:auto;
-}
-.Client-image
-{
-  margin:auto;
-}
-.Client-image img
-{
-  width:120px;
-  height:120px;
-  border-radius: 50px;
-  margin:auto;
-}
-.Client-image h4
-{
-     font-family:'Overlock';
-     text-align:center;
-}
-
-.Client-image h5{
-  font-family:'Overlock';
-  text-align:center;
-  color:#b0aeae;
-}
-
-#Comment1 , #Comment2 , #Comment3  , #Comment4
-{
-  display:none;
-}
-
