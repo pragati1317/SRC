@@ -243,6 +243,7 @@ footer {
   .Footer-Column {
     display: block;
     width: 50%;
+    float:left;
   }
 }
 
