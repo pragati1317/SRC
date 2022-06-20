@@ -114,6 +114,7 @@ form button{
   width:12.5rem;
   border-radius:0.2rem;
   float:right;
+  bottom:0;
   box-shadow: #24a0ed;
 }
 
