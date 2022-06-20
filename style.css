@@ -213,7 +213,6 @@ footer {
 @media screen and (max-width:786px) {
   html {
     font-size: 62.5%;
-    overflow:hidden;
   }
 
   .Form {
